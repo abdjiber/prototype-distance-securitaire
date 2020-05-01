@@ -4,7 +4,7 @@
 Pour ces versions, dans un premier temps les utilisateurs renseignent la distance minimale qu'ils souhaitent être par rapport aux autres utilisateurs et leurs villes.  Les applications récupèrent en temps réelle les positions et déterminent si la distance minimale est respectée. Si cette distance n'est pas respectée les applications lanceront une animation indiquant ce fait et fait vibrer le support (configuration du navigateur nécessaire pour les vibrations pour l'application web). 
 
 **Fonctionnement technique**<br>
-Les applications génèrent des identifiants unique à chaque utilisateur et chaque utilisation. Des autorisations pour les deux applications sont nécessaires afin d'obtenir la position. Les applications ne stockent que temporairement les positions et les supprimes après chaque utilisation. Les villes servent à filtrer les utilisateurs afin de faciliter les calculs des distances. Bien que ces dernières peuvent être récupérer à partir des positions, je les demandes dans ces versions pour éviter de nouveaux calculs.
+Les applications génèrent des identifiants unique à chaque utilisateur et chaque utilisation. Des autorisations pour les deux applications sont nécessaires afin d'obtenir la position. Les applications ne stockent que temporairement les positions et les supprimes après chaque utilisation. Les villes servent à filtrer les utilisateurs afin de faciliter les calculs des distances. Bien que ces dernières peuvent être récupérer à partir des positions, je les demande dans ces versions pour éviter de nouveaux calculs.
 
 L'application Android utilise l'application web.
 
