@@ -35,5 +35,5 @@ Télécharger le fichier apk sur votre mobile, retrouver le fichier dans le doss
 **Tester les applications**<br>
 Vous pouvez tester les applications avec deux téléphones en mettant la même ville dans le formulaire.
 
-**Bonnes pratiques**
+**Bonnes pratiques**<br>
 Pour l'application web, à la première demande d'accès à votre position, enregistrer ce choix.
