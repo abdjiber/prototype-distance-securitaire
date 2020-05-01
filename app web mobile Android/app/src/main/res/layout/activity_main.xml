@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView android:text="@string/progression"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:id="@+id/textview" android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:textColor="#000000" tools:ignore="MissingConstraints"></TextView>
+
+    <ProgressBar android:id="@+id/pBar"
+                 style="?android:attr/progressBarStyleHorizontal" android:layout_width="fill_parent"
+                 android:layout_height="wrap_content" android:layout_centerVertical="true"
+                 android:padding="2dip" tools:ignore="MissingConstraints">
+    </ProgressBar>
+    <WebView
+            android:layout_width="409dp"
+            android:layout_height="729dp" tools:layout_editor_absoluteY="1dp" tools:layout_editor_absoluteX="1dp"
+            android:id="@+id/webview" tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
