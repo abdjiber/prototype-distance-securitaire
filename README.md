@@ -1,5 +1,8 @@
 ## Prototypes applications web et web mobile
 
+**Démonstrations**
+J'ai mis sur YouTube [vidéo](https://www.youtube.com/watch?v=uSn7Oznno-E) privée de démonstrations des deux applications.<br>
+
 **Fonctionnement des applications**<br>
 Pour ces versions, dans un premier temps les utilisateurs renseignent la distance minimale qu'ils souhaitent être par rapport aux autres utilisateurs et leurs villes.  Les applications récupèrent en temps réelle les positions et déterminent si la distance minimale est respectée. Si cette distance n'est pas respectée les applications lanceront une animation indiquant ce fait et fait vibrer le support (configuration du navigateur nécessaire pour les vibrations pour l'application web). 
 
