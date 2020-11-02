@@ -1,7 +1,7 @@
 ## Prototypes applications web et web mobile
 Ce dépôt Github contient le code source des prototypes de deux applications (Web et Android) que j'ai développées dans le cadre de la pandémie COVID-19. Les applications permettent d'indiquer aux utilisateurs à quelle distance ils se trouvent par rapport aux autres utilisateurs, leur permettant ainsi de savoir s'ils respectent la distance minimale de sécurité ou une distance qu'eux même ont choisie.
 
-**Démonstrations**
+**Démonstrations**<br>
 Une [vidéo](https://www.youtube.com/watch?v=uSn7Oznno-E) de démonstration des applications est disponible sur YouTube.<br>
 
 **Fonctionnement des applications**<br>
