@@ -1,7 +1,8 @@
 ## Prototypes applications web et web mobile
+Ce dépôt Github contient le code source des prototypes de deux applications (Web et Android) que j'ai développées dans le cadre de la pandémie COVID-19. Les applications permettent d'indiquer aux utilisateurs à quelle distance ils se trouvent par rapport aux autres utilisateurs, leur permettant ainsi de savoir s'ils respectent la distance minimale de sécurité ou une distance qu'eux même ont choisie.
 
 **Démonstrations**
-J'ai mis sur YouTube [vidéo](https://www.youtube.com/watch?v=uSn7Oznno-E) privée de démonstrations des deux applications.<br>
+Une [vidéo](https://www.youtube.com/watch?v=uSn7Oznno-E) de démonstration des applications est disponible sur YouTube.<br>
 
 **Fonctionnement des applications**<br>
 Pour ces versions, dans un premier temps les utilisateurs renseignent la distance minimale qu'ils souhaitent être par rapport aux autres utilisateurs et leurs villes.  Les applications récupèrent en temps réelle les positions et déterminent si la distance minimale est respectée. Si cette distance n'est pas respectée les applications lanceront une animation indiquant ce fait et fait vibrer le support (configuration du navigateur nécessaire pour les vibrations pour l'application web). 
@@ -9,7 +10,7 @@ Pour ces versions, dans un premier temps les utilisateurs renseignent la distanc
 **Fonctionnement technique**<br>
 Les applications génèrent des identifiants unique à chaque utilisateur et chaque utilisation. Des autorisations pour les deux applications sont nécessaires afin d'obtenir la position. Les applications ne stockent que temporairement les positions et les supprimes après chaque utilisation. Les villes servent à filtrer les utilisateurs afin de faciliter les calculs des distances. Bien que ces dernières peuvent être récupérer à partir des positions, je les demande dans ces versions pour éviter de nouveaux calculs.
 
-L'application Android utilise l'application web.
+L'application Android est une extension de l'application web.
 
 **Technologies**<br>
 Les technologies utilisées sont les suivantes:
@@ -29,14 +30,13 @@ En local, l'application web marche bien mais une fois déployer elle ne supporte
 La géolocalisation n'est pas très précise.
 
 **Installations de l'application mobile**<br>
-Pour l'application web: vous pouvez la tester en local en installant les dépendances dans le fichier requirements.txt et exécuter la commande flask run.
+Pour l'application web: vous pouvez la tester en local en installant les dépendances dans le fichier requirements.txt et exécuter la commande `flask run`.
 Pour l'application mobile: configurer en amont votre téléphone pour pouvoir installer des applications de sources inconnues i.e ne provenant pas de Google Play Store. Pour ce fait, activer cette option dans vos paramètres.
 Télécharger le fichier apk sur votre mobile, retrouver le fichier dans le dossier où vous l'avez téléchargé et cliqué dessus pour lancer l'installation. Une fois installer, données les autorisations nécessaires (ex. accès à la position).
 
 
-
 **Tester les applications**<br>
-Vous pouvez tester les applications avec deux téléphones en mettant la même ville dans le formulaire.
+Les applications peuvent être tester en téléchargeant le [fichier](https://github.com/abdjiber/prototype-distance-securitaire/blob/master/app%20web%20mobile%20Android/app/release/app-release.apk) **apk** sur deux téléphones.
 
 **Bonnes pratiques**<br>
 Pour l'application web, à la première demande d'accès à votre position, enregistrer ce choix.
