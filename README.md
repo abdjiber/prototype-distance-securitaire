@@ -36,7 +36,7 @@ Télécharger le fichier apk sur votre mobile, retrouver le fichier dans le doss
 
 
 **Tester les applications**<br>
-Les applications peuvent être tester en téléchargeant le [fichier](https://github.com/abdjiber/prototype-distance-securitaire/blob/master/app%20web%20mobile%20Android/app/release/app-release.apk) **apk** sur deux téléphones.
+Les applications peuvent être tester en téléchargeant le [fichier](https://github.com/abdjiber/prototype-distance-securitaire/blob/master/Ma_Distance_de_Securite.apk) **apk** sur deux téléphones.
 
 **Bonnes pratiques**<br>
 Pour l'application web, à la première demande d'accès à votre position, enregistrer ce choix.
