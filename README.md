@@ -22,12 +22,12 @@ Les technologies utilisées sont les suivantes:
 - SQL: pour la création et l'interaction avec la base de données.
 - Android: pour l'application mobile.
 - Google Cloud: App Engine pour le déploiement.
-- db4free.net: stockage gratuit des données dans MySQL pour tester les applications.
+- MySQL: stockage gratuit des données sur db4free.net.
 
 **Difficultés rencontrées**<br>
 En local, l'application web marche bien mais une fois déployer elle ne supporte qu'une connexion. Et n'exécute pas les calculs de façon synchrone. Je pense que ceci est du au framework Flask car j'ai changé de serveur mais j'observe le même problème. Une solutions possible est l'utilisation d'un framework plus robuste que Flask comme Django.
 
-La géolocalisation n'est pas très précise.
+La géolocalisation n'est pas précise.
 
 **Installations de l'application mobile**<br>
 Pour l'application web: vous pouvez la tester en local en installant les dépendances dans le fichier requirements.txt et exécuter la commande `flask run`.
