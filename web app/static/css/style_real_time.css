@@ -1,0 +1,102 @@
+
+body {
+  font: 20px Arial;  
+}
+
+
+.btn-stop{
+   margin-top: 30%;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+     border-top-right-radius: 50%;
+      /*margin-left: -4%;*/
+       height: 60px;
+        width: 80px;
+}
+
+.ripple_green {
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position:absolute;
+  animation: ripple_green 3s linear infinite;
+  -webkit-animation: ripple_green 3s linear infinite;
+  -moz-animation: ripple_green 3s linear infinite;
+  -o-animation: ripple_green 3s linear infinite;
+}
+.ripple_green::before,
+.ripple_green::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius: 50%;
+  animation: ripple_green 3s linear infinite 1s;
+  -webkit-animation: ripple_green 3s linear infinite;
+  -moz-animation: ripple_green 3s linear infinite;
+  -o-animation: ripple_green 3s linear infinite;
+}
+.ripple_green::after {
+  animation: ripple_green 3s linear infinite 2s;
+  -webkit-animation: ripple_green 3s linear infinite;
+  -moz-animation: ripple_green 3s linear infinite;
+  -o-animation: ripple_green 3s linear infinite;
+}
+@keyframes ripple_green {
+  0% {
+    box-shadow: 0 0 0 .5rem rgba(0,255,0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 50rem rgba(0,255,0, 0);
+  }
+}
+
+
+.ripple_red {
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position:absolute;
+  animation: ripple_red 3s linear infinite;
+  -webkit-animation: ripple_red 3s linear infinite;
+  -moz-animation: ripple_red 3s linear infinite;
+  -o-animation: ripple_red 3s linear infinite;
+}
+
+.ripple_red::before,
+.ripple_red::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius: 50%;
+  animation: ripple_red 2s linear infinite 1s;
+  -webkit-animation: ripple_red 2s linear infinite 1s;
+  -moz-animation: ripple_red 2s linear infinite 1s;
+  -o-animation: ripple_red 2s linear infinite 1s;
+}
+.ripple_red::after {
+  animation: ripple_red 2s linear infinite 2s;
+  -webkit-animation: ripple_red 2s linear infinite 2s;
+  -moz-animation: ripple_red 2s linear infinite 2s;
+  -o-animation: ripple_red 2s linear infinite 2s;
+}
+@keyframes ripple_red {
+  0% {
+    box-shadow: 0 0 0 .5rem rgba(255,0,0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 50rem rgba(255,0,0, 0);
+  }
+}
+
