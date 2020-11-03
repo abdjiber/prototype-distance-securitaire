@@ -1,0 +1,55 @@
+<!doctype html>
+    <html>
+    <!-- PROTOTYPE APPLICATION DISTANCE DE SECURITE -->
+      <head>
+          <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.5.0/css/all.css” integrity=“sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU” crossorigin=“anonymous”>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style_index.css') }}">
+        <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='img/logo.JPG') }}">
+        <title>Prototype Distance de Sécuritaire </title>
+      </head>
+      <body>
+        <div id="form_and_animation">
+                <!-- FORMULAIRE POUR COLLECTER LA VILLE ET LA DISTANCE MINIMALE SOUHAITEEE DE L UTILISATEUR-->
+                <div class="text-left" id="connexion" style="height: 30px;width: 450px; margin-top: 0.2%; background-color: #4700b3">
+                    <strong style="color: white;padding-top: 10px; font-size: 20px">Connexion</strong>
+                </div>
+
+                <form class="m-l-auto" autocomplete="off" id="form" style="margin-left: 0.6%">
+                  <fieldset>
+                    <div class="form-group autocomplete">
+                            <label class="col-form-label"><strong>Ville:</strong></label>
+                            <input class="form-control-plaintext input" id="cities" type="text" placeholder="Ville" style="width: 450px">
+                        <small id="description_city" style="display: block;" class="form-text">Veuillez choisir votre ville dans la liste.</small>
+                    </div>
+
+                    <div class="form-group" >
+                        <label class="col-form-label"><strong>Distance:</strong></label>
+                        <input class="form-control-plaintext input" type="text" id="distance" placeholder="Distance souhaitée en mètre" style="width: 450px">
+                        <small class="form-text" id="description_distance" style="display: block;">Distance minimale par rapport aux autres personnes.
+                      </small>
+                    </div>
+
+                    <div class="form-group font-weight-bold">
+                        <input type="submit" id="demarer" class="btn" value="Demarrer" style="background-color: #4700b3">
+                    </div>
+                  </fieldset>
+                </form>
+
+            <!-- ANIMATION -->
+            <div id="ripple"  class="ripple_blue"></div>
+        </div>
+        <p id="connection_progress" style="display: none">Connexion en cours...</p>
+
+        <!-- SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/send_data_to_flask.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/autocomplete.js') }}"></script>
+      </body>
+</html>

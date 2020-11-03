@@ -1,0 +1,18 @@
+runtime: python
+env: flex 
+#uwsgi --http :$PORT --module app:app --enable-threads
+entrypoint: gunicorn --worker-class=gevent --worker-connections=1000 --workers=3 -b :$PORT app:app -t 120
+runtime_config:
+  python_version: 3
+default_expiration: "1m"
+handlers:
+- url: /static
+  static_dir: static
+- url: /img
+  static_dir: static/img
+- url: /css
+  static_dir: static/css
+- url: /js
+  static_dir: static/js
+- url: /.*
+  script: auto

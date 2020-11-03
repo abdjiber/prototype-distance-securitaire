@@ -1,0 +1,40 @@
+<!doctype html>
+    <html>
+    <!-- PROTOTYPE APPLICATION DISTANCE DE SECURITE -->
+      <head>
+          <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.5.0/css/all.css” integrity=“sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU” crossorigin=“anonymous”>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style_real_time.css') }}">
+        <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='img/logo.JPG') }}">
+        <title>Prototype</title>
+      </head>
+      <body>
+        <div id="infos">
+            <p>Informations sur votre position</p>
+            <!-- ANIMATION -->
+            <div id="ripple"  class="ripple_green"></div>
+            <!-- AFFICHAGE DES COORDONNEES GEOGRAPHIQUES -->
+            <div>
+                <!-- AFFICHAGE DE LA POSITION DE L UTILISATEUR -->
+                <p id="info_position"></p>
+
+                <!--AFFICHAGE DE LA DISTANCE DE L UTILISATEUR LE PLUS PROCHE-->
+                <p id="info_dist" style="display: none"></p>
+            </div>
+
+            <!-- BOUTTON ARRET -->
+            <div>
+                <button class="btn btn-danger btn-stop" id="arreter">Arrêter</button>
+            </div>
+        </div>
+        <p id="deconnection_progress" style="display: none">Déconnexion en cours...</p>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/send_data_to_flask.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/real_time.js') }}"></script>
+      </body>
+</html>
