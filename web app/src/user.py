@@ -18,35 +18,35 @@ class USER():
         text += "\n position: " + str(self.position)
         return text
 
-    def getId(self):
+    def get_id(self):
         return self.id
 
-    def getCity(self):
+    def get_city(self):
         return self.city
 
-    def getPosition(self):
+    def get_position(self):
         return self.position
 
-    def setCity(self, city):
+    def set_city(self, city):
         self.city = city
 
-    def setId(self, id_):
+    def set_id(self, id_):
         self.id = id_
 
-    def setPosition(self, position):
+    def set_position(self, position):
         self.position = position
 
-    def setMinDistance(self, dist):
+    def set_min_distance(self, dist):
         self.min_distance = dist
 
-    def setIsActive(self, active):
+    def set_is_active(self, active):
         self.is_active = active
 
-    def setPreviousMinDistanceFromOtherUsers(self, dist):
+    def set_previous_min_distance_from_other_users(self, dist):
         self.previous_min_dist_from_other_users = dist
 
-    def setInfo(self, id_, city, min_distance, is_active):
-        self.setId(id_)
-        self.setCity(city)
-        self.setMinDistance(float(min_distance))
-        self.setIsActive(is_active)
+    def set_info(self, id_, city, min_distance, is_active):
+        self.set_id(id_)
+        self.set_city(city)
+        self.set_min_distance(float(min_distance))
+        self.set_is_active(is_active)

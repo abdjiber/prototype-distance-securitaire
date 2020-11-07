@@ -14,19 +14,14 @@ class Position():
     def __str__(self):
         return f"Latitude: {self.lat}, longitude: {self.lng}"
 
-    def gmDistance(self, lat_lng):
+    def google_maps_distance(self, lat_lng):
         """Return Google Map distance from a latitude and longitude."""
         res = gm.distance_matrix((self.lat, self.lng), (lat_lng))
-        dist = self.convertStringToFloatAndMeter(res['rows']
-                                                    [0]
-                                                    ['elements']
-                                                    [0]
-                                                    ['distance']
-                                                    ['text']
-                                                 )
+        dist = self.convert_string_to_float_and_meter(
+            res['rows'][0]['elements'][0]['distance']['text'])
         return dist
 
-    def convertStringToFloatAndMeter(self, val):
+    def convert_string_to_float_and_meter(self, val):
         """Convert the Google Maps distance to float."""
         unite_distance = val[-2:]
         if unite_distance == "km":
@@ -39,9 +34,9 @@ class Position():
             val = val.replace("k", "")
         if " " in val:
             val = val.replace(" ", "")
-        return float(val)*coef_convertion
+        return float(val) * coef_convertion
 
-    def getCurrentPosition(self):
+    def get_current_position(self):
         """Use Google Maps to get the user current position."""
         coords = gm.geolocate()
         self.lat = coords['location']['lat']
